@@ -252,7 +252,6 @@ main {
 .text-grid p {
   margin: 2rem auto 5rem auto;
   width: 80%;
-
 }
 
 .span-col-2 {
@@ -270,18 +269,26 @@ main {
 
 /************** TESTIMONIALS **********/
 .testimonials-wrapper {
-  color: black;
+  color: rgb(255, 255, 255);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin: 2rem auto 2rem auto;
-  width: 50%;
+  width: 100%;
+
 
 }
+.testimonials-wrapper section {
+  width: 14vw;
+  margin: 1rem 2rem 1rem 2rem;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: #6D8B79;
+}
 
-.testimonials-wrapper section img{
- width: 100%;
- display: block;
- margin-bottom: 1rem;
+.testimonials-wrapper section img {
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
 }
 
 .testimonials-wrapper p {
@@ -293,24 +300,21 @@ main {
   font-weight: bold;
 }
 
-.testimonials-wrapper section {
-  max-width: 12.5vw;
-}
-
 
 
 
 /************** FOOTER **********/
 
 footer {
-  min-height: 50vh;
   display: flex;
-  justify-content: space-evenly;
   color: black;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto 5rem auto;
 }
 
 footer div {
-  min-width: 20%;
+  width: 18vw;
 }
 
 footer h3 {
@@ -327,4 +331,17 @@ footer tr {
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+
+.footer-socialmedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer img {
+  height: 50px;
+  width: auto;
+  margin: 2rem 0 0 0;
 }
