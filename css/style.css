@@ -1,0 +1,330 @@
+/* BASIC */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  font-size: 16px;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4 a {
+  font-family: Verdana, sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.35rem;
+}
+
+h4 {
+  font-size: 1.15rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+
+}
+
+/* Buttons */
+.btn-standard {
+  display: block;
+  background-color: white;
+  color: #6e8c7a;
+  padding: 10px 25px 10px 25px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  box-shadow: rgb(34, 43, 37, 0.5) 0px 2px 10px;
+  width: fit-content;
+  margin: 0 auto 0 auto;
+}
+
+/* Buttons hover */
+.btn-standard:hover {
+  background: rgb(253, 106, 33);
+  color: white;
+  transition: 0.7s;
+  transform: translateY(-2px);
+}
+
+
+/**************NAVIGATION *************/
+
+/*NAVIGATIONS BAR ***/
+nav {
+  margin: 0 10% 0 10%;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  height: 8vh;
+}
+
+/*NAVIGATIONS PUNKTER */
+nav a {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  align-items: center;
+  padding: 0 15px 0 15px;
+}
+
+/*NAVIGATIONS PUNKTER HOVER*/
+nav a:hover {
+  background-color: #6D8B79;
+  color: white;
+}
+
+/*MAIN CONTENT */
+main {
+  width: 100%;
+}
+
+/*HERO WRAPPER AND IMAGE */
+.hero-article {
+  height: 75vh;
+  display: flex;
+  width: 100%;
+  background-image: url(../img/herotest.jpg);
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+
+/*HERO CTA BOX */
+.hero-article-CTA-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(109, 139, 121, 0.8);
+  width: 50vw;
+  height: auto;
+  text-align: center;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.hero-article-CTA-box div {
+  width: 90%;
+}
+
+/*HERO CTA BOX TEXT*/
+.hero-article-CTA-box p {
+  margin: 4rem 0 4rem 0;
+  font-size: 1.5em;
+}
+
+/* VI TILBYDER */
+.forside-services-article {
+  width: 100%;
+  margin: 3rem 0 5rem 0;
+}
+
+/* VI TILBYDER HEADER */
+.article-header {
+  color: black;
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto 2rem auto;
+}
+
+/* VI TILBYDER GRIDSYSTEM */
+.forside-services-grid {
+  display: grid;
+  width: 80%;
+  margin: 0 auto 0 auto;
+  grid-gap: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr))
+}
+
+/* VI TILBYDER GRIDKORT */
+.forside-services-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 0 2rem 0;
+  background: #6D8B79;
+  border-radius: 40px;
+}
+
+/* GRIDKORT IKONER */
+.forside-services-card img {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 2rem;
+  fill: cyan;
+}
+
+/* GRIDKORT TEXT */
+.forside-services-card p {
+  margin: 2rem 0 2rem 0;
+  width: 80%;
+}
+
+
+/********* FORSIDE INSPIRATIONS ARTIKLER **************/
+.forside-inspiration-article {
+  display: grid;
+  grid-template-rows: 2fr;
+  position: relative;
+}
+
+/*ARTIKEL VENSTRE BILLEDE */
+.left-grid-article {
+  grid-template-columns: 1.5fr 1fr;
+}
+
+/*ARTIKEL HØJRE BILLEDE */
+.right-grid-article {
+  grid-template-columns: 1fr 1.5fr;
+}
+
+/*ARTIKEL BILLEDE */
+.forside-inspiration-article img {
+  width: 100%;
+  height: auto;
+}
+
+/*ARTIKEL TEXT DIV */
+.forside-inspiration-article div {
+  text-align: center;
+  background-color: #6D8B79;
+}
+
+/*ARTIKEL TEXT DIV HEADER */
+.forside-inspiration-article div h2 {
+  margin: 4rem auto 3rem auto;
+  width: 80%;
+}
+
+/*ARTIKEL TEXT DIV TEXT */
+.forside-inspiration-article div p {
+  margin: 2rem auto 5rem auto;
+  width: 80%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.text-grid {
+  background-color: #6D8B79;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+/*ARTIKEL TEXT DIV HEADER */
+.text-grid h2 {
+  margin: 4rem auto 3rem auto;
+  width: 80%;
+}
+
+/*ARTIKEL TEXT DIV TEXT */
+.text-grid p {
+  margin: 2rem auto 5rem auto;
+  width: 80%;
+
+}
+
+.span-col-2 {
+  grid-column: span 2 / auto;
+  display: block;
+  background-image: url(../img/herotest.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.span-col-2 img {
+  height: 10px;
+  display: block;
+}
+
+/************** TESTIMONIALS **********/
+.testimonials-wrapper {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem auto 2rem auto;
+  width: 50%;
+
+}
+
+.testimonials-wrapper section img{
+ width: 100%;
+ display: block;
+ margin-bottom: 1rem;
+}
+
+.testimonials-wrapper p {
+  font-size: 0.85rem;
+  margin: 1rem 0 0.5rem 0;
+}
+
+.testimonials-wrapper span {
+  font-weight: bold;
+}
+
+.testimonials-wrapper section {
+  max-width: 12.5vw;
+}
+
+
+
+
+/************** FOOTER **********/
+
+footer {
+  min-height: 50vh;
+  display: flex;
+  justify-content: space-evenly;
+  color: black;
+}
+
+footer div {
+  min-width: 20%;
+}
+
+footer h3 {
+  margin: 2rem 0 1rem 0;
+  text-transform: uppercase;
+}
+
+
+footer table {
+  width: 100%;
+}
+
+footer tr {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
