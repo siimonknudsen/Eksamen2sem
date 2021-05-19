@@ -31,17 +31,78 @@
 <body>
     <header>
         <nav>
-            <a href="">
-                <img src="index.html" alt="logo">
-            </a>
-            <a href="index.html">Forside</a>
-            <a href="bartender.html">Bartenderudlejning</a>
-            <a href="tjener.html">Tjenerudlejning</a>
-            <a href="arrangementer.html">Arrangementer</a>
-            <a href="priser.html">Priser</a>
-            <a href="https://trekantensis.dk/">Webshop</a>
-            <a href="omos.html">Om os</a>
-            <a href="kontakt.html">Kontakt</a>
+
+
+            <div> <img src="img/logo.png" class="logo"></div>
+
+            <label for="btn" class="icon">
+                <span class="fa fa-bars"></span>
+            </label>
+            <input type="checkbox" id="btn">
+
+            <ul>
+                <li><a href="#">FORSIDE</a></li>
+                <li>
+                    <label for="btn-1" class="show">BARTENDERUDLEJNING <i class="fa fa-angle-down"></i></label>
+                    <a href="#">BARTENDERUDLEJNING <i class="fa fa-angle-down"></i></a>
+                    <input type="checkbox" id="btn-1">
+                    <ul>
+                        <li><a href="#">Information</a></li>
+                        <li><a href="#">Priser</a></li>
+                        <li><a href="#">Booking</a></li>
+                        <li><a href="#">Drinks kort</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <label for="btn-2" class="show">TJENERUDLEJNING <i class="fa fa-angle-down"></i></label>
+                    <a href="#">TJENERUDLEJNING <i class="fa fa-angle-down"></i></a>
+                    <input type="checkbox" id="btn-2">
+                    <ul>
+                        <li><a href="#">Information</a></li>
+                        <li><a href="#">Priser</a></li>
+                        <li><a href="#">Booking</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <label for="btn-3" class="show">ARRENGEMENTER <i class="fa fa-angle-down"></i></label>
+                    <a href="#">ARRENGEMENTER <i class="fa fa-angle-down"></i></a>
+                    <input type="checkbox" id="btn-3">
+                    <ul>
+                        <li><a href="#">Ginsmagning</a></li>
+                        <li><a href="#">Cocktailkursus</a></li>
+                        <li><a href="#">Bryllup</a></li>
+                        <li><a href="#">Fødselsdag</a></li>
+                        <li><a href="#">Firmafest</a></li>
+                        <li><a href="#">Julefrokost</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">PRISER</a>
+                </li>
+
+                <li>
+                    <a href="#">WEBSHOP</a>
+                </li>
+
+                <li>
+                    <label for="btn-4" class="show">OM OS <i class="fa fa-angle-down"></i></label>
+                    <a href="#">OM OS <i class="fa fa-angle-down"></i></a>
+                    <input type="checkbox" id="btn-4">
+                    <ul>
+                        <li><a href="#">Vision & Mission</a></li>
+                        <li><a href="#">Personale</a></li>
+                        <li><a href="#">Handelsbetingelser</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">KONTAKT</a>
+                </li>
+
+            </ul>
 
         </nav>
     </header>
@@ -50,16 +111,17 @@
 
     <!---------------- FORSIDE--------------->
     <main>
-        <article class="hero-article">
-            <div class="hero-article-CTA-box">
-                <div>
-                    <h1>TrekantensEvents</h1>
-                    <p>Skræddersy dit arrangement hos os!</p>
-                    <a class="btn-standard" href="">Indhent Tilbud</a>
+        <article>
+            <div class="hero-image">
+                <div class="hero-text-boks">
+                    <h1 class="sidenavn">LEJ EN BARTENDER</h1>
+                    <p class="beskrivelse">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <a class="btn-standard" href="">Indhent tilbud</a>
                 </div>
             </div>
         </article>
-
         <!-- FORSIDE - VI TILBYDER -->
         <article class="forside-services-article">
             <h2 class="article-header">Vi tilbyder</h2>
