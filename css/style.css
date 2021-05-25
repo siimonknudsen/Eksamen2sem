@@ -277,7 +277,7 @@ nav input {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(108, 139, 120, 0.8);
-    padding: 20px;
+    padding: 20px 30px 20px 30px;
 
 }
 
