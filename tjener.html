@@ -12,7 +12,7 @@
     <meta name="og:title" property="og:title" content="TrekantensEvents">
     <meta name="twitter:card" content="TrekantensEvents">
     <link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
-    <link rel="canonical" href="http://simonboehrnsknudsen.dk/">
+    <link rel="canonical" href="http://simonboehrnsknudsen.dk/trekantensevents/tjener">
 
 
     <title>Trekantens Events ApS - Tjenerudlejning </title>
@@ -35,7 +35,7 @@
         <nav>
 
 
-            <div> <a href="index.html"><img src="img/logo.png" class="logo"> </a> </div>
+            <div> <a href="index.html"><img src="img/logo.png" class="logo" alt="Logo - Trekantens Events"> </a> </div>
 
             <label for="btn" class="icon">
                 <span class="fa fa-bars"></span>
@@ -130,7 +130,9 @@
 
                 <div class="storecontainer">
                     <div class="lillecontainer">
-                        <img src="img/tjenerlille.jpg">
+                        <img src="img/tjenerlille.webp "
+                            alt="Tjener med to tallerkner på armen, den ene tallerken indeholder en salat, den anden indeholder brød med topping"
+                            loading="lazy">
                     </div>
 
                     <div class="lillecontainer">
@@ -155,7 +157,7 @@
 
         <!----------- PRIS PR GÆST PR TIME ----------->
         <article id="tjener-priser-link" class="prisoversigt">
-            <img src="img/wave.svg">
+            <img src="img/wave.svg" alt="Illustration af bølgeform">
 
             <h2 class="estimeret">priser for leje af tjenere:</h2>
             <br>
@@ -213,23 +215,25 @@
 
                     <div class="infographic-grid">
                         <div class="infographic-content-box">
-                            <img src="img/drinkbg.png" alt="">
+                            <img src="img/drinkbg.png" alt="Illustration af en cocktail med grønt tilbehør i"
+                                loading="lazy">
                             <p>Cocktails af høj kvalitet</p>
                         </div>
 
                         <div class="infographic-content-box">
-                            <img src="img/hjertebg.png" alt="">
+                            <img src="img/hjertebg.png" alt="Illustration af et hjerte" loading="lazy">
                             <p>Kærlighed til detaljen</p>
                         </div>
 
 
                         <div class="infographic-content-box">
-                            <img src="img/personalebg.png" alt="">
+                            <img src="img/personalebg.png" alt="Illustration af 3 personer ved siden af hinanden"
+                                loading="lazy">
                             <p>Professionelt personale</p>
                         </div>
 
                         <div class="infographic-content-box">
-                            <img src="img/tilfredsbg.png" alt="">
+                            <img src="img/tilfredsbg.png" alt="Illustration af hånd der giver tommel op" loading="lazy">
                             <p>Tilfredshedsgaranti</p>
                         </div>
 
@@ -239,7 +243,9 @@
 
                 <div class="storecontainer">
                     <div class="lillecontainer">
-                        <img src="img/tjener2.jpg">
+                        <img src="img/tjener2.webp"
+                            alt="En mand hælder et glas rødvin op i et glas med et glas med hvidvin ved siden af. Der er en mand i baggrunden som sidder ved bordet."
+                            loading="lazy">
                     </div>
                     <div class="lillecontainer">
                         <h2>PAKKETILBUD</h2>
@@ -260,11 +266,10 @@
                 </div>
 
             </div>
-
-
-            </div>
         </article>
-        <img src="img/wave.svg">
+        <img src="img/wave.svg" alt="Illustration af bølgeform">
+
+
 
 
     </main>
@@ -322,7 +327,6 @@
         </div>
 
 
-
         <div>
             <div class="footer-content-wrapper">
                 <h3>Kontakt</h3>
@@ -332,39 +336,42 @@
                     Telefon: <br>
                     +45 28 59 34 66
 
-                    <div class="footer-socialmedia">
-                        <a href="https://www.facebook.com/trekantensbartender/">
-                            <img src="img/facebook.svg" alt="">
-                        </a>
-
-                        <a href="https://www.instagram.com/trekantenstjenerudlejning/">
-                            <img src="img/instagram.svg" alt="">
-                        </a>
-                    </div>
                 </p>
+
+                <div class="footer-socialmedia">
+                    <a href="https://www.facebook.com/trekantensbartender/">
+                        <img src="img/facebook.svg" alt="Facebook ikon">
+                    </a>
+
+                    <a href="https://www.instagram.com/trekantenstjenerudlejning/">
+                        <img src="img/instagram.svg" alt="Instagram ikon">
+                    </a>
+                </div>
+
             </div>
         </div>
 
     </footer>
 
 
-    <!----------- POPUP CHAT----------->
+  <!----------- POPUP CHAT----------->
 
-    <button class="open-button" onclick="openForm()"><i class='far fa-comment-dots'></i>CHAT MED OS HER</button>
+  <button class="open-button" onclick="openForm()"><i class='far fa-comment-dots'></i>CHAT MED OS HER</button>
 
-    <div class="chat-popup" id="myForm">
-        <form class="form-container">
-            <div class="billede">
-                <img class="billede" src="img/logo-kopi.png">
-            </div>
+  <div class="chat-popup" id="myForm">
+      <form class="form-container">
+          <div class="billede">
+              <img class="billede" src="img/logo.png" alt="Logo - Trekantens Events">
+          </div>
 
-            <label class="chatboxtext" for="msg">Vi bestræber os på at svare indenfor 2-3 timer</label>
-            <textarea class="skrivher" placeholder="Skriv din besked her..." name="msg" required></textarea>
+          <label class="chatboxtext" for="msg">Vi bestræber os på at svare indenfor 2-3 timer</label>
+          <textarea class="skrivher" placeholder="Skriv din besked her..." name="msg" id="msg" required></textarea>
 
-            <button onclick="alertFunction()" type="submit" class="btn">SEND BESKED</button>
-            <button type="button" class="btn cancel" onclick="closeForm()">LUK CHAT VINDUE</button>
-        </form>
-    </div>
+          <button onclick="alertFunction()" type="submit" class="btn">SEND BESKED</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">LUK CHAT VINDUE</button>
+      </form>
+  </div>
+
 
     <script src="js/trekantensscript.js"></script>
 

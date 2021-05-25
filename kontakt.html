@@ -12,7 +12,7 @@
     <meta name="og:title" property="og:title" content="TrekantensEvents">
     <meta name="twitter:card" content="TrekantensEvents">
     <link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
-    <link rel="canonical" href="http://simonboehrnsknudsen.dk/">
+    <link rel="canonical" href="http://simonboehrnsknudsen.dk/trekantensevents/kontakt">
 
 
     <title>Trekantens Events ApS - Kontakt </title>
@@ -37,7 +37,7 @@
     <nav>
 
 
-      <div> <a href="index.html"><img src="img/logo.png" class="logo"> </a> </div>
+      <div> <a href="index.html"><img src="img/logo.png" class="logo" alt="Logo - Trekantens Events"> </a> </div>
 
       <label for="btn" class="icon">
         <span class="fa fa-bars"></span>
@@ -171,37 +171,37 @@
             <h3 class="title">KONTAKTFORMULAR</h3>
             <h4 class="title1">Udfyld formularen og få et uforpligtende tilbud</h4>
 
-            <label class="container-check">Bartender
-              <input type="checkbox">
+            <label for="bartendercontainercheck" class="container-check">Bartender
+              <input type="checkbox" id="bartendercontainercheck">
               <span class="checkmark"></span>
             </label>
-            <label class="container-check">Tjener
-              <input type="checkbox">
+            <label for="tjenercontainercheck" class="container-check">Tjener
+              <input type="checkbox" id="tjenercontainercheck">
               <span class="checkmark"></span>
             </label>
             <div class="input-container">
-              <input type="tel" name="phone" class="input"/>
-              <label for="">Antal gæster</label>
+              <input type="tel" name="phone" class="input" id="gaesterinputcontainer"/>
+              <label for="gaesterinputcontainer">Antal gæster</label>
               <span>Antal gæster</span>
             </div>
             <div class="input-container">
-              <input type="text" name="name" class="input" required/>
-              <label for="">Navn</label>
+              <input type="text" name="name" class="input" id="navninputcontainer" required/>
+              <label for="navninputcontainer">Navn</label>
               <span>Navn</span>
             </div>
             <div class="input-container">
-              <input type="email" name="email" class="input" required />
-              <label for="">Email</label>
+              <input type="email" name="email" class="input" id="emailinputcontainer" required />
+              <label for="emailinputcontainer">Email</label>
               <span>Email</span>
             </div>
             <div class="input-container">
-              <input type="tel" name="phone" class="input" required/>
-              <label for="">Telefon</label>
+              <input type="tel" name="phone" class="input" id="telefoninputcontainer" required/>
+              <label for="telefoninputcontainer">Telefon</label>
               <span>Telefon</span>
             </div>
             <div class="input-container textarea">
-              <textarea name="message" class="input"></textarea>
-              <label for="">Besked</label>
+              <textarea name="message" class="input" id="beskedinputcontainer"></textarea>
+              <label for="beskedinputcontainer">Besked</label>
               <span>Besked</span>
             </div>
             <button onclick="alertFunction()" class="btnbook">BOOK NU</button>
@@ -267,53 +267,54 @@
       </div>
     </div>
 
-
-
     <div>
       <div class="footer-content-wrapper">
-        <h3>Kontakt</h3>
-        <p>
-          Mail: <br>
-          mail@trekantensbartender.dk <br> <br>
-          Telefon: <br>
-          +45 28 59 34 66
+          <h3>Kontakt</h3>
+          <p>
+              Mail: <br>
+              mail@trekantensbartender.dk <br> <br>
+              Telefon: <br>
+              +45 28 59 34 66
 
-          <div class="footer-socialmedia">
-            <a href="https://www.facebook.com/trekantensbartender/">
-              <img src="img/facebook.svg" alt="">
-            </a>
+          </p>
 
-            <a href="https://www.instagram.com/trekantenstjenerudlejning/">
-              <img src="img/instagram.svg" alt="">
-            </a>
-          </div>
-        </p>
+              <div class="footer-socialmedia">
+                  <a href="https://www.facebook.com/trekantensbartender/">
+                      <img src="img/facebook.svg" alt="Facebook ikon">
+                  </a>
+
+                  <a href="https://www.instagram.com/trekantenstjenerudlejning/">
+                      <img src="img/instagram.svg" alt="Instagram ikon">
+                  </a>
+              </div>
+       
       </div>
-    </div>
+  </div>
 
-  </footer>
-
-
+</footer>
 
 
 
-    <!----------- POPUP CHAT----------->
 
-    <button class="open-button" onclick="openForm()"><i class='far fa-comment-dots'></i>CHAT MED OS HER</button>
-  
-    <div class="chat-popup" id="myForm">
-      <form class="form-container">
-        <div class="billede">
-          <img class="billede" src="img/logo-kopi.png">
-        </div>
-  
-        <label class="chatboxtext" for="msg">Vi bestræber os på at svare indenfor 2-3 timer</label>
-        <textarea class="skrivher" placeholder="Skriv din besked her..." name="msg" required></textarea>
-  
-        <button onclick="alertFunction()" type="submit" class="btn">SEND BESKED</button>
-        <button type="button" class="btn cancel" onclick="closeForm()">LUK CHAT VINDUE</button>
-      </form>
-    </div>
+
+
+   <!----------- POPUP CHAT----------->
+
+   <button class="open-button" onclick="openForm()"><i class='far fa-comment-dots'></i>CHAT MED OS HER</button>
+
+   <div class="chat-popup" id="myForm">
+       <form class="form-container">
+           <div class="billede">
+               <img class="billede" src="img/logo.png" alt="Logo - Trekantens Events">
+           </div>
+
+           <label class="chatboxtext" for="msg">Vi bestræber os på at svare indenfor 2-3 timer</label>
+           <textarea class="skrivher" placeholder="Skriv din besked her..." name="msg" id="msg" required></textarea>
+
+           <button onclick="alertFunction()" type="submit" class="btn">SEND BESKED</button>
+           <button type="button" class="btn cancel" onclick="closeForm()">LUK CHAT VINDUE</button>
+       </form>
+   </div>
 
   <script src="js/trekantensscript.js"></script>
 

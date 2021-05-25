@@ -56,24 +56,6 @@ a {
     font-weight: bold;
 }
 
-@media all and (max-width: 1024px) {
-    h1 {
-        font-size: 24px;
-    }
-
-    h2 {
-        font-size: 22px;
-    }
-
-    h3 {
-        font-size: 20px;
-    }
-
-    h4 {
-        font-size: 18px;
-    }
-}
-
 /* Buttons */
 .btn-standard {
     display: block;
@@ -274,15 +256,15 @@ nav input {
 }
 
 .bartender {
-    background-image: url(../img/hero-bartenderlille.jpg);
+    background-image: url(../img/hero-bartenderlille_1.webp);
 }
 
 .tjener {
-    background-image: url(../img/tjener-herolille.jpg);
+    background-image: url(../img/tjener-herolille_1.webp);
 }
 
 .arrangementer {
-    background-image: url(../img/Arrengementer.hero.jpg);
+    background-image: url(../img/Arrengementer.herolille.webp);
 
 }
 
@@ -323,27 +305,12 @@ nav input {
 
 }
 
-/* VI TILBYDER HEADER */
-.article-header {
-    color: black;
-    text-align: center;
-    width: fit-content;
-    margin: 0 auto 2rem auto;
-    text-transform: uppercase;
-}
-
 /* WAVE.SVG */
 .wave-svg {
     margin-bottom: -10rem;
 }
 
-@media all and (max-width: 1024px) {
-    .wave-svg {
-        margin-bottom: -3rem;
-    }
 
-
-}
 
 /* VI TILBYDER GRIDSYSTEM */
 .forside-services-grid {
@@ -406,10 +373,11 @@ nav input {
     margin: 2rem auto 2rem auto;
 }
 
-.forside-video iframe{
+.forside-video iframe {
     width: 100%;
     height: 50vh;
 }
+
 /* WEBSHOP INSPIRATION */
 
 .webshop-article {
@@ -447,7 +415,7 @@ nav input {
     background-image: url(../img/webshop.webp);
     background-position: center center;
     background-size: cover;
-   width: 100%;
+    width: 100%;
 }
 
 .webshop-article-text {
@@ -459,25 +427,6 @@ nav input {
     text-align: center;
     padding: 2rem;
 
-}
-
-.webshop-article-text p {}
-
-/* ---------- RESPONSIVE HERO IMAGE ---------- */
-
-@media all and (max-width: 1024px) {
-    .hero-text-boks {
-        width: 320px;
-        height: auto;
-    }
-
-    .sidenavn {
-        font-size: 24px;
-    }
-
-    .beskrivelse {
-        margin-top: 20px;
-    }
 }
 
 /* ---------- OM BARTENDERUDLEJNING ---------- */
@@ -518,26 +467,6 @@ nav input {
 
 .omudlejning-h2 {
     margin-top: 30px;
-}
-
-/* ---------- RESPONSIVE OM BARTENDERUDLEJNING ---------- */
-
-@media all and (max-width: 1024px) {
-    .storecontainer {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .lillecontainer {
-        width: 100%;
-        padding: 0px 0 10px 0;
-    }
-
-    .lillecontainer p,
-    .lillecontainer h2 {
-        padding: 0px 10px 0px 10px
-    }
 }
 
 
@@ -631,14 +560,8 @@ nav input {
         margin-right: auto;
         text-align: center;
     }
-    
-
-}
 
 
-
-@media all and (max-width: 1024px) {
-    
 }
 
 /* DRINKSKORT */
@@ -654,20 +577,21 @@ nav input {
     text-align: center;
 }
 
-.drinkskort-wrapper h2{
-  padding: 1rem;
-  color: white;
+.drinkskort-wrapper h2 {
+    padding: 1rem;
+    color: white;
 }
 
 
-.drinkskort-wrapper p{
+.drinkskort-wrapper p {
     padding: 1rem;
     color: white;
-  }
+}
 
-.drinkskort-wrapper img{
-   height: 150px;
-  }
+.drinkskort-wrapper img {
+    height: 150px;
+}
+
 .drinkskort-wrapper a {
     margin: 2rem auto 2rem auto;
 }
@@ -683,21 +607,20 @@ nav input {
     margin-bottom: 2rem;
 }
 
+.infographic-grid {
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 .infographic-wrapper h2 {
     text-align: center;
     color: white;
     margin: 1rem auto 2rem auto;
     width: 80%;
-}
-
-.infographic-grid {
-    display: grid;
-    grid-gap: 3em;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
 }
 
 .infographic-content-box {
@@ -716,30 +639,9 @@ nav input {
     text-align: center;
     padding: 1rem;
     word-break: break-word;
-    hyphens: auto;;
+    hyphens: auto;
+    ;
 }
-
-/* ---------- RESPONSIVE OM BARTENDERUDLEJNING ---------- */
-
-@media all and (max-width: 1024px) {
-    .infographic-wrapper {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 0 0 0 0;
-    }
-}
-
-.infographic-grid {
-    grid-gap: 2em;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-
 
 
 /* ---------- ARRANGEMENTER ---------- */
@@ -752,7 +654,7 @@ nav input {
 
 .storecontainer2 {
     background-color: #ffffff;
-    width: 95%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     box-shadow: rgb(34, 43, 37, 0.5) 0px 2px 30px;
@@ -886,50 +788,59 @@ table.priser-prisoversigt-tabel {
     text-align: left;
     border-collapse: collapse;
     color: black;
-  }
-  table.priser-prisoversigt-tabel td, table.priser-prisoversigt-tabel th {
+}
+
+table.priser-prisoversigt-tabel td,
+table.priser-prisoversigt-tabel th {
     border: 1px solid #000000;
     padding: 10px 10px 10px 10px;
-  }
-  table.priser-prisoversigt-tabel tbody td {
+}
+
+table.priser-prisoversigt-tabel tbody td {
     font-size: 16px;
     font-weight: 500;
     color: black;
-  }
-  table.priser-prisoversigt-tabel td:nth-child(even) {
+}
+
+table.priser-prisoversigt-tabel td:nth-child(even) {
     background: #6D8B79;
     text-align: left;
     color: white;
-  }
-  table.priser-prisoversigt-tabel thead {
+}
+
+table.priser-prisoversigt-tabel thead {
     background: #FF6C00;
     border-bottom: 1px solid #000000;
     text-transform: uppercase;
-  }
-  table.priser-prisoversigt-tabel thead th {
+}
+
+table.priser-prisoversigt-tabel thead th {
     font-size: 15px;
     font-weight: bold;
     color: #FFFFFF;
     text-align: left;
     border-left: 1px solid #000000;
-  }
-  table.priser-prisoversigt-tabel thead th:first-child {
+}
+
+table.priser-prisoversigt-tabel thead th:first-child {
     border-left: none;
-  }
-  
-  table.priser-prisoversigt-tabel tfoot td {
+}
+
+table.priser-prisoversigt-tabel tfoot td {
     font-size: 13px;
-  }
-  table.priser-prisoversigt-tabel tfoot .links {
+}
+
+table.priser-prisoversigt-tabel tfoot .links {
     text-align: right;
-  }
-  table.priser-prisoversigt-tabel tfoot .links a{
+}
+
+table.priser-prisoversigt-tabel tfoot .links a {
     display: inline-block;
     background: #FFFFFF;
     color: #398AA4;
     padding: 2px 8px;
     border-radius: 5px;
-  }
+}
 
 /************** OM OS ***********/
 /* Om os content */
@@ -1255,7 +1166,7 @@ textarea.input {
     margin-top: 35px;
     text-decoration: none;
     width: 150px;
-    
+
 }
 
 .btnbook:hover {
@@ -1407,49 +1318,6 @@ textarea.input {
     }
 }
 
-@media (max-width: 480px) {
-    .container {
-        padding: 1.5rem;
-    }
-
-    .contact-info:before {
-        display: none;
-    }
-
-    form,
-    .contact-info {
-        padding: 1.7rem 1.6rem;
-    }
-
-    .text,
-    .information,
-    .social-media p {
-        font-size: 0.8rem;
-    }
-
-    .title {
-        font-size: 1.15rem;
-    }
-
-    .social-icons a {
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
-    }
-
-    .contacticon {
-        width: 23px;
-    }
-
-    .input {
-        padding: 0.45rem 1.2rem;
-    }
-
-    .btnbook {
-        padding: 0.45rem 1.2rem;
-    }
-}
-
 
 
 /**************** CHAT BOX ***************/
@@ -1473,8 +1341,8 @@ textarea.input {
 }
 
 
-.open-button i{
-   padding-right: 10px;
+.open-button i {
+    padding-right: 10px;
 }
 
 .open-button:hover {
@@ -1496,7 +1364,7 @@ textarea.input {
     max-width: 300px;
     padding: 10px;
     background-color: #fff;
-    
+
 }
 
 .billede {
@@ -1667,8 +1535,56 @@ footer img {
 
 
 
-/*MAX 1024pxX*/
+/*MAX 1024PX - TABLETS */
 @media all and (max-width: 1024px) {
+
+    /* RESPONSIVE HEADERS */
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    /* ---------- RESPONSIVE HERO IMAGE ---------- */
+    .hero-text-boks {
+        width: 320px;
+        height: auto;
+    }
+
+    .sidenavn {
+        font-size: 24px;
+    }
+
+    .beskrivelse {
+        margin-top: 20px;
+    }
+
+    /* ---------- RESPONSIVE OM BARTENDERUDLEJNING ---------- */
+    .storecontainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .lillecontainer {
+        width: 100%;
+        padding: 0px 0 10px 0;
+    }
+
+    .lillecontainer p,
+    .lillecontainer h2 {
+        padding: 0px 10px 0px 10px
+    }
 
     /* ARRANGEMENTER */
 
@@ -1677,6 +1593,7 @@ footer img {
         flex-direction: column;
         width: 100%;
         padding: 0;
+        max-width: 800px;
     }
 
     .lillecontainer2 {
@@ -1714,6 +1631,13 @@ footer img {
         margin-top: 30px;
     }
 
+    /* RESPONSIVE INFOGRAPHIC */
+    .infographic-wrapper {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 0 0 0;
+    }
 
     /* OM OS & VÆRDIER */
 
@@ -1741,6 +1665,11 @@ footer img {
 
     .personale-wrapper section {
         padding: 0 0 0 0;
+    }
+
+    /* WAVE */
+    .wave-svg {
+        margin-bottom: -3rem;
     }
 
     /* OM CHRIS  */
@@ -1783,7 +1712,7 @@ footer img {
 
 }
 
-/*MAX 480*/
+/*MAX 480PX - SMARTPHONES */
 @media screen and (max-width: 480px) {
     .forside-services-grid {
         display: grid;
@@ -1796,5 +1725,47 @@ footer img {
 
     .personale-wrapper-content {
         grid-gap: 2em;
+    }
+
+    /* RESPONSIVE KONTAKTFORMULAR */
+    .container {
+        padding: 1.5rem;
+    }
+
+    .contact-info:before {
+        display: none;
+    }
+
+    form,
+    .contact-info {
+        padding: 1.7rem 1.6rem;
+    }
+
+    .text,
+    .information,
+    .social-media p {
+        font-size: 0.8rem;
+    }
+
+    .title {
+        font-size: 1.15rem;
+    }
+
+    .social-icons a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .contacticon {
+        width: 23px;
+    }
+
+    .input {
+        padding: 0.45rem 1.2rem;
+    }
+
+    .btnbook {
+        padding: 0.45rem 1.2rem;
     }
 }

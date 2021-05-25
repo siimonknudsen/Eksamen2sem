@@ -12,7 +12,7 @@
     <meta name="og:title" property="og:title" content="TrekantensEvents">
     <meta name="twitter:card" content="TrekantensEvents">
     <link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
-    <link rel="canonical" href="http://simonboehrnsknudsen.dk/">
+    <link rel="canonical" href="http://simonboehrnsknudsen.dk/trekantensevents/">
 
 
     <title>Trekantens Events ApS </title>
@@ -36,7 +36,7 @@
         <nav>
 
 
-            <div> <a href="index.html"><img src="img/logo.png" class="logo"> </a> </div>
+            <div> <a href="index.html"><img src="img/logo.png" class="logo" alt="Logo - Trekantens Events"> </a> </div>
 
             <label for="btn" class="icon">
                 <span class="fa fa-bars"></span>
@@ -137,22 +137,19 @@
         <!-- FORSIDE - VI TILBYDER -->
 
         <div class="wave-svg">
-            <img src="img/wave.svg" alt="">
+            <img src="img/wave.svg" alt="Illustration af bølgeform">
         </div>
 
 
-        <article class="forside-services-article">
-            <h2 class="article-header"></h2>
-
             <!-- FORSIDE - VI TILBYDER  - GRID SYSTEM -->
-            <div class="forside-services-grid">
+            <article class="forside-services-grid">
 
 
-                <!-- SERVICE NAVN-->
+                <!-- BARTENDERUDLEJNING -->
 
                 <section class="forside-services-card">
                     <div class="card-image-wrapper">
-                        <img src="img/bartenderudlejning.svg" alt="Ikon">
+                        <img src="img/bartenderudlejning.svg" alt="Ikon - Bartender mixer kit">
                     </div>
                     <div>
                         <h3>Bartender</h3>
@@ -164,11 +161,11 @@
                 </section>
 
 
-                <!-- SERVICE NAVN-->
+                <!-- TJENERUDLEJNING-->
 
                 <section class="forside-services-card">
                     <div class="card-image-wrapper">
-                        <img src="img/tjenerudlejning.svg" alt="Ikon">
+                        <img src="img/tjenerudlejning.svg" alt="Ikon - Tjenerhånd med et fad i hånden">
                     </div>
                     <div>
                         <h3>Tjener</h3>
@@ -182,11 +179,11 @@
 
 
 
-                <!-- SERVICE NAVN-->
+                <!-- COCKTIALKURSUS -->
 
                 <section id="cocktail-kursus" class="forside-services-card">
                     <div class="card-image-wrapper">
-                        <img src="img/cocktailkursus.svg" alt="Ikon">
+                        <img src="img/cocktailkursus.svg" alt="Ikon - Frisk cocktail med isterninger og citron">
                     </div>
                     <div>
                         <h3>Cocktailkursus</h3>
@@ -199,10 +196,10 @@
                         mere</a>
                 </section>
 
-
+                <!-- Ginsmagning -->
                 <section class="forside-services-card">
                     <div class="card-image-wrapper">
-                        <img src="img/ginsmagning.svg" alt="Ikon">
+                        <img src="img/ginsmagning.svg" alt="Ikon - Flaske gin med og et glas ved siden af">
                     </div>
                     <div>
                         <h3>Ginsmagning</h3>
@@ -213,11 +210,11 @@
                         mere</a>
                 </section>
 
-                <!-- SERVICE NAVN-->
+                <!-- DRINKSKORT -->
 
                 <section class="forside-services-card">
                     <div class="card-image-wrapper">
-                        <img src="img/drinkskort.svg" alt="Ikon">
+                        <img src="img/drinkskort.svg" alt="Ikon - Liste med drinks">
                     </div>
                     <div>
                         <h3>Drinkskort</h3>
@@ -230,11 +227,11 @@
 
 
 
-                <!-- SERVICE NAVN-->
+                <!-- PRISER -->
 
                 <section class="forside-services-card">
                     <div class="card-image-wrapper">
-                        <img src="img/priser.svg" alt="Ikon">
+                        <img src="img/priser.svg" alt="Ikon - Prismærker">
                     </div>
                     <div>
                         <h3>Priser</h3>
@@ -247,13 +244,14 @@
                     <a class="btn-standard" href="priser.html">Se priser</a>
                 </section>
 
-            </div>
-        </article>
+            </article>
 
+
+        <!-- YOUTUBE VIDEO -->
         <article class="forside-video">
-            <iframe src="https://www.youtube.com/embed/X5XEjIOtX8A" title="YouTube video player" frameborder="0"
+            <iframe src="https://www.youtube.com/embed/X5XEjIOtX8A" title="YouTube video player" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+                allowfullscreen loading="lazy"></iframe>
 
         </article>
 
@@ -351,37 +349,42 @@
                     Telefon: <br>
                     +45 28 59 34 66
 
+                </p>
+
                     <div class="footer-socialmedia">
                         <a href="https://www.facebook.com/trekantensbartender/">
-                            <img src="img/facebook.svg" alt="">
+                            <img src="img/facebook.svg" alt="Facebook ikon">
                         </a>
 
                         <a href="https://www.instagram.com/trekantenstjenerudlejning/">
-                            <img src="img/instagram.svg" alt="">
+                            <img src="img/instagram.svg" alt="Instagram ikon">
                         </a>
                     </div>
-                </p>
+             
             </div>
         </div>
 
     </footer>
-    <!----------- POPUP CHAT----------->
 
-    <button class="open-button" onclick="openForm()"><i class='far fa-comment-dots'></i>CHAT MED OS HER</button>
 
-    <div class="chat-popup" id="myForm">
-        <form class="form-container">
-            <div class="billede">
-                <img class="billede" src="img/logo-kopi.png">
-            </div>
+  <!----------- POPUP CHAT----------->
 
-            <label class="chatboxtext" for="msg">Vi bestræber os på at svare indenfor 2-3 timer</label>
-            <textarea class="skrivher" placeholder="Skriv din besked her..." name="msg" required></textarea>
+  <button class="open-button" onclick="openForm()"><i class='far fa-comment-dots'></i>CHAT MED OS HER</button>
 
-            <button onclick="alertFunction()" type="submit" class="btn">SEND BESKED</button>
-            <button type="button" class="btn cancel" onclick="closeForm()">LUK CHAT VINDUE</button>
-        </form>
-    </div>
+  <div class="chat-popup" id="myForm">
+      <form class="form-container">
+          <div class="billede">
+              <img class="billede" src="img/logo.png" alt="Logo - Trekantens Events">
+          </div>
+
+          <label class="chatboxtext" for="msg">Vi bestræber os på at svare indenfor 2-3 timer</label>
+          <textarea class="skrivher" placeholder="Skriv din besked her..." name="msg" id="msg" required></textarea>
+
+          <button onclick="alertFunction()" type="submit" class="btn">SEND BESKED</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">LUK CHAT VINDUE</button>
+      </form>
+  </div>
+
     <script src="js/trekantensscript.js"></script>
 
 </body>
