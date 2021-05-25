@@ -2,40 +2,436 @@
 <html lang="da">
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords"
-		content="Events, bartender, tjener, arrangementer, fest, bryllup, fødselsdag, cocktails, ginsmagning, cocktailkursus, smagning, kursus" />
-	<meta name="description" content="TrekantensEvents sørger for en uforglemmelig fest & oplevelse. 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords"
+        content="Events, bartender, tjener, arrangementer, fest, bryllup, fødselsdag, cocktails, ginsmagning, cocktailkursus, fest, drinks" />
+    <meta name="description" content="TrekantensEvents sørger for en uforglemmelig fest & oplevelse. 
     Vi laver pakkeløsninger til din fest & giver dig en skræddersyet løsning.">
-	<meta name="og:title" property="og:title" content="TrekantensEvents">
-	<meta name="twitter:card" content="TrekantensEvents">
-	<link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
-	<link rel="canonical" href="http://simonboehrnsknudsen.dk/">
+    <meta name="og:title" property="og:title" content="TrekantensEvents">
+    <meta name="twitter:card" content="TrekantensEvents">
+    <link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
+    <link rel="canonical" href="http://simonboehrnsknudsen.dk/">
 
 
-	<title>Trekantens Events ApS </title>
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link
-		href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;300;400;500;600;700;800;900&display=swap"
-		rel="stylesheet">
+    <title>Trekantens Events ApS - Arrangementer </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
-	<!-- Ikoner -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!-- Ikoner -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
+    <!------------NAVIGATION ------------->
+    <header>
+        <nav>
+
+
+            <div> <a href="index.html"><img src="img/logo.png" class="logo"> </a> </div>
+
+            <label for="btn" class="icon">
+                <span class="fa fa-bars"></span>
+            </label>
+            <input type="checkbox" id="btn">
+
+            <ul>
+                <li><a href="index.html">FORSIDE</a></li>
+                <li>
+                    <label for="btn-1" class="show">BARTENDERUDLEJNING <i class="fa fa-angle-down"></i></label>
+                    <a href="bartender.html">BARTENDERUDLEJNING <i class="fa fa-angle-down"></i></a>
+                    <input type="checkbox" id="btn-1">
+                    <ul>
+                        <li><a href="bartender.html#bartender-information-link">Information</a></li>
+                        <li><a href="bartender.html#bartender-priser-link">Priser</a></li>
+                        <li><a href="bartender.html#bartender-priser-link">Booking</a></li>
+                        <li><a href="bartender.html#bartender-drinkskort-link">Drinkskort</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <label for="btn-2" class="show">TJENERUDLEJNING <i class="fa fa-angle-down"></i></label>
+                    <a href="tjener.html">TJENERUDLEJNING <i class="fa fa-angle-down"></i></a>
+                    <input type="checkbox" id="btn-2">
+                    <ul>
+                        <li><a href="tjener.html#tjener-information-link">Information</a></li>
+                        <li><a href="tjener.html#tjener-priser-link">Priser</a></li>
+                        <li><a href="tjener.html#tjener-priser-link">Booking</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <label for="btn-3" class="show">ARRANGEMENTER <i class="fa fa-angle-down"></i></label>
+                    <a href="arrangementer.html">ARRANGEMENTER <i class="fa fa-angle-down"></i></a>
+                    <input type="checkbox" id="btn-3">
+                    <ul>
+                        <li><a href="arrangementer.html#arrangementer-cocktailkursus-link">Cocktailkursus</a></li>
+                        <li><a href="arrangementer.html#arrangementer-ginsmagning-link">Ginsmagning</a></li>
+                        <li><a href="arrangementer.html#arrangementer-fodselsdag-link">Fødselsdag</a></li>
+                        <li><a href="arrangementer.html#arrangementer-bryllup-link">Bryllup</a></li>
+                        <li><a href="arrangementer.html#arrangementer-julefrokost-link">Julefrokost</a></li>
+
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="priser.html">PRISER</a>
+                </li>
+
+                <li>
+                    <a href="https://trekantensis.dk/">WEBSHOP</a>
+                </li>
+
+                <li>
+                    <label for="btn-4" class="show">OM OS <i class="fa fa-angle-down"></i></label>
+                    <a href="omos.html">OM OS <i class="fa fa-angle-down"></i></a>
+                    <input type="checkbox" id="btn-4">
+                    <ul>
+                        <li><a href="omos.html#omos-hvemervi-link">Hvem er vi</a></li>
+                        <li><a href="omos.html#omos-personale-link">Personale</a></li>
+                        <li><a href="omos.html#omos-handelsbetingelser-link">Handelsbetingelser</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="kontakt.html">KONTAKT</a>
+                </li>
+
+            </ul>
+
+        </nav>
+    </header>
+
 
     <!-- Main Content-->
     <main>
-        
+
+        <!----------- HERO BILLEDE + TEKST----------->
+        <div class="storecontainer1">
+            <article>
+                <div class="hero-image arrangementer">
+                    <div class="hero-text-boks">
+                        <h1 class="sidenavn">ARRANGEMENTER</h1>
+                        <p class="beskrivelse">Trekantens Events tilbyder lige præcis den løsning og sammensætning, som
+                            er med til at gøre dit arrangement perfekt. Du kan overlade ansvaret til os og vi sørger for
+                            det hele. Hvad end det omfatter professionelle bartendere, erfarent serveringspersonale, DJ,
+                            som sørger for ekstra gang i musikken, så du kan nyde lidt ekstra og danse lidt mere. Ønsker
+                            du at få det hele eller blot nogle af vores services, så klarer vi også den! </p>
+                        <a class="btn-standard" href="kontakt.html">Indhent tilbud</a>
+                    </div>
+                </div>
+            </article>
+
+            <!----------- COCKTAILKURSUS ----------->
+
+            <article id="arrangementer-cocktailkursus-link">
+                <div class="storecontainer2">
+                    <div class="lillecontainer2">
+                        <img class="arg1" src="img/cocktail1.png">
+                        <img class="arg1" src="img/cocktail2lille.jpg">
+                    </div>
+                    <div class="lillecontainer2">
+                        <img class="arg" src="img/cocktail3lille.jpg">
+                        <img class="arg1" src="img/cocktail4lille.jpg">
+                    </div>
+
+                    <div class="lillecontainer3">
+                        <h2 class="arg-tekst top">COCKTAILKURSUS</h2>
+                        <br>
+
+                        <p class="arg-tekst">Er du klar til at komme med om på den anden side af baren? Deromme, hvor
+                            der er styr på, hvad der gemmer sig i flaskerne, og hvor bartenderen både kan shake og røre
+                            alt fra de nyeste hits på klubberne til de klassiske cocktails, der aldrig går af mode. Så
+                            kryds linjen fra bargæst til bartender og kom med ind i en verden af smage, kombinationer og
+                            farverige fortællinger set fra den side af disken, hvor bartenderen holder til.
+
+                            <br> <br>
+                            Vi skræddersyer vores cocktailkurser til dit arrangement, hvor vores professionelle
+                            bartendere inviterer
+                            jer med bag baren til et par spændende timer. Der er altid rigeligt drikkelse og
+                            underholdning undervejs,
+                            så det bliver bestemt ikke kedeligt, når vores erfarne barkyndige deler ud af deres
+                            guldkorn.
+                        </p>
+                        <br>
+                        <br>
+                        <a class="btn-standard btn-arg" href="kontakt.html">Book cocktailkursus</a>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <!----------- GINSMAGNING ----------->
+
+            <article id="arrangementer-ginsmagning-link">
+                <div class="storecontainer2 reverse">
+
+                    <div class="lillecontainer3">
+                        <h2 class="arg-tekst top">GINSMAGNING</h2>
+                        <br>
+
+                        <p class="arg-tekst">Gin er ikke længere kun noget, vi forbinder med noter af enebær og gran. I
+                            dag er smagsnoterne i gin nemlig udvidet til også at ramme citrus, havtorn, lyng og en række
+                            andre forskellige nuancer. Det er netop det store spekter af smage, der gør, at gin igen
+                            er blevet populært på barerne.
+
+                            <br> <br>
+                            Hvad enten du allerede er overbevist om, at gin & tonic skal
+                            drikkes for andet end malaria, eller om du ikke er helt overbevist endnu, vil ginsmagningen
+                            tage dig med ind i en spændende verden af nuancer og farver, der udfordrer din holdning til
+                            gin.</p>
+                        <br>
+                        <br>
+                        <a class="btn-standard btn-arg" href="kontakt.html">Book ginsmagning</a>
+                    </div>
+
+                    <div class="lillecontainer2">
+                        <img class="arg1" src="img/gin1lille.jpg">
+                        <img class="arg" src="img/gin2lille.jpg">
+                    </div>
+                    <div class="lillecontainer2">
+                        <img class="arg1" src="img/gin3lille.jpg">
+                        <img class="arg1" src="img/gin4lille.jpg">
+                    </div>
+                </div>
+            </article>
+
+
+
+            <!----------- FØDSELSDAG ----------->
+
+            <article id="arrangementer-fodselsdag-link">
+                <div class="storecontainer2">
+                    <div class="lillecontainer2">
+                        <img class="arg1" src="img/fodselsdag1lille.jpg">
+                        <img class="arg1" src="img/fodselsdag2.png">
+                    </div>
+                    <div class="lillecontainer2">
+                        <img class="arg" src="img/fodselsdag3lille.jpg">
+                        <img class="arg1" src="img/fodselsdag4.png">
+                    </div>
+
+                    <div class="lillecontainer3">
+                        <h2 class="arg-tekst top">FØDSELSDAG</h2>
+                        <br>
+
+                        <p class="arg-tekst">
+                            Ønsker du at fejre, at endnu et år er gået med forfriskende velkomstdrinks og cocktails med
+                            en uforglemmelig smagsoplevelse for hver og én. Så foreslår vi, at du sammen med os, tager
+                            din kommende fødselsdagsfest til næste niveau.
+                            <br>
+                            <br>
+                            Aftenen starter som regel med et lækkert måltid, for dig og dine gæster. Hyr nogle af vores
+                            professionelle tjenere, som hjælper til med at servere maden for dine gæster og glem alt om
+                            oprydningen. Som aftenen går og musikken spiller, hvem elsker så ikke en kold fadøl? Pist
+                            din fødselsdagsfest op og tilbyd dine gæster fri fadøl. Slip alle tøjler, nyd det
+                            fantastiske selskab og sug alle de gode øjeblikke til dig.
+                        </p>
+                        <br>
+                        <br>
+                        <a class="btn-standard btn-arg" href="kontakt.html">Indhent tilbud</a>
+                    </div>
+                </div>
+
+            </article>
+
+
+            <!----------- BRYLLUP----------->
+
+            <article id="arrangementer-bryllup-link">
+                <div class="storecontainer2 reverse">
+
+                    <div class="lillecontainer3">
+                        <h2 class="arg-tekst top">BRYLLUP</h2>
+                        <br>
+
+                        <p class="arg-tekst">
+                            Vi ved hvor meget planlægning, der ligger forud for afholdelse af det perfekte bryllup. Når
+                            dagen kommer, så gælder det om at nyde den i fulde drag. Måske står I overfor
+                            fejringen af mange års kærlighed og skal i den anledning holde bronze-, sølv-, eller
+                            guldbryllup.
+                            Lej en bartender til baren, en tjener til servering af maden eller en DJ, som sørger for den
+                            helt perfekte musik hele aftenen. Giv os det fulde ansvar og vi sørger for, at du og dine
+                            gæsterne får en uforglemmelig aften.
+                            <br>
+                            <br>
+                            Har I nogle absolut yndlingsdrinks, som I bare er nødt til at servere til jeres bryllup? Så
+                            kan I lave jeres helt egen sammensætning, hvor I tilføjer lige præcis de drinks og cocktails
+                            I ønsker skal serveres til jeres bryllup. I har sågar muligheden for, at lave jeres helt
+                            eget drinkskort. </p>
+                        <br>
+                        <br>
+                        <a class="btn-standard btn-arg" href="kontakt.html">Indhent tilbud</a>
+                    </div>
+
+                    <div class="lillecontainer2">
+                        <img class="arg1" src="img/bryllup1lille.jpg">
+                        <img class="arg" src="img/bryllup2lille.jpg">
+                    </div>
+                    <div class="lillecontainer2">
+                        <img class="arg1" src="img/bryllup3lille.jpg">
+                        <img class="arg1" src="img/bryllup4lille.jpg">
+                    </div>
+                </div>
+            </article>
+
+
+            <!----------- JULEFROKOST ----------->
+
+            <article id="arrangementer-julefrokost-link">
+                <div class="storecontainer2">
+                    <div class="lillecontainer2">
+                        <img class="arg" src="img/julefrokost1lille.jpg">
+                        <img class="arg1" src="img/julefrokost2lille.jpg">
+                    </div>
+                    <div class="lillecontainer2">
+                        <img class="arg1" src="img/julefrokost3lille.jpg">
+                        <img class="arg1" src="img/julefrokost4.png">
+                    </div>
+
+                    <div class="lillecontainer3">
+                        <h2 class="arg-tekst top">JULEFROKOST</h2>
+                        <br>
+
+                        <p class="arg-tekst">
+                            Alle ved, at julefrokosten er den perfekte måde, at runde året af på. Hvad end det er sammen
+                            med kollegaerne, vennerne eller familien. Lad os hjælpe jer med at planlægge julefrokosten.
+                            Vi sørger for, at den bliver taget til et nyt niveau. Det er både, om du ønsker det småt
+                            eller stort, eller hyggeligt og intimt. Lige meget festens omfang,
+                            så sørger vi naturligvis også for julestemningen.
+                            <br> <br>
+                            Lej en af vores erfarne og professionelle bartendere til festen. På den måde sørger du
+                            stensikkert for, at blive den bedste chef, ven eller kæreste. Julefrokosten er en oplagt
+                            mulighed for, at supplere snapsen med nogle af vores lækre og forfriskende cocktails.
+                            Du bestemmer helt selv hvilke cocktails og drinks du ønsker, at vi
+                            skal mixe sammen til jer. Du har sågar muligheden for at lave dit eget drinkskort, så
+                            gæsterne til julefrokosten ikke er i tvivl om, hvilke drinks de kan bestille i
+                            baren. </p>
+                        <br>
+                        <br>
+                        <a class="btn-standard btn-arg" href="kontakt.html">Indhent tilbud</a>
+                    </div>
+                </div>
+            </article>
+
+
+
+        </div>
+
 
 
 
 
     </main>
-    
+
+
+    <!---------------- FOOTER ------------>
+    <footer>
+
+
+        <div>
+            <div class="footer-content-wrapper">
+                <h3>Adresse</h3>
+                <p>
+                    Birkemose Allé 29 <br> <br>
+
+                    6000 Kolding <br> <br>
+
+                    CVR: 39592169
+
+                </p>
+            </div>
+        </div>
+
+
+        <div>
+            <div class="footer-content-wrapper">
+                <h3>Åbningstider</h3>
+                <table>
+
+                    <tr>
+                        <td>Mandag-Onsdag</td>
+                        <td>Efter aftale</td>
+                    </tr>
+
+                    <tr>
+                        <td>Torsdag</td>
+                        <td>17:00 - 19:00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Fredag</td>
+                        <td>10:00 - 13:00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Lørdag</td>
+                        <td>10:00 - 13:00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Søndag</td>
+                        <td>Efter aftale</td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+
+
+
+        <div>
+            <div class="footer-content-wrapper">
+                <h3>Kontakt</h3>
+                <p>
+                    Mail: <br>
+                    mail@trekantensbartender.dk <br> <br>
+                    Telefon: <br>
+                    +45 28 59 34 66
+
+                    <div class="footer-socialmedia">
+                        <a href="https://www.facebook.com/trekantensbartender/">
+                            <img src="img/facebook.svg" alt="">
+                        </a>
+
+                        <a href="https://www.instagram.com/trekantenstjenerudlejning/">
+                            <img src="img/instagram.svg" alt="">
+                        </a>
+                    </div>
+                </p>
+            </div>
+        </div>
+
+    </footer>
+
+    <!----------- POPUP CHAT----------->
+
+    <button class="open-button" onclick="openForm()"><i class='far fa-comment-dots'></i>CHAT MED OS HER</button>
+  
+    <div class="chat-popup" id="myForm">
+      <form class="form-container">
+        <div class="billede">
+          <img class="billede" src="img/logo-kopi.png">
+        </div>
+  
+        <label class="chatboxtext" for="msg">Vi bestræber os på at svare indenfor 2-3 timer</label>
+        <textarea class="skrivher" placeholder="Skriv din besked her..." name="msg" required></textarea>
+  
+        <button onclick="alertFunction()" type="submit" class="btn">SEND BESKED</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">LUK CHAT VINDUE</button>
+      </form>
+    </div>
+
+    <script src="js/trekantensscript.js"></script>
+
 </body>
+
 </html>
