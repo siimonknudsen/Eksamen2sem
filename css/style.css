@@ -1158,6 +1158,7 @@ textarea.input {
     display: block;
     background-color: rgb(253, 106, 33);
     color: white;
+    font-family: 'Poppins', sans-serif;
     padding: 10px 40px 10px 40px;
     border-radius: 50px;
     text-transform: uppercase;
@@ -1326,6 +1327,7 @@ textarea.input {
 .open-button {
     background-color: #fd6a21;
     color: #fff;
+    font-family: 'Poppins', sans-serif;
     padding: 16px 20px;
     border: none;
     border-radius: 50px;
