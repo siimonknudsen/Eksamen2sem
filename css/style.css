@@ -1367,7 +1367,7 @@ textarea.input {
     max-width: 300px;
     padding: 10px;
     background-color: #fff;
-
+    font-family: 'Poppins', sans-serif;
 }
 
 .billede {
@@ -1402,6 +1402,7 @@ textarea.input {
 /* Set a style for the submit/send button */
 .form-container .btn {
     background-color: #6C8B78;
+    font-family: 'Poppins', sans-serif;
     color: #fff;
     padding: 16px 20px;
     border: none;
