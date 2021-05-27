@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="da">
 
+<!-- (Simon & Natascha) -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,7 +33,7 @@
 
 <body>
 
-  <!------------NAVIGATION ------------->
+    <!------------NAVIGATION (Natascha & Rigmor) ------------->
   <header>
     <nav>
 
@@ -115,7 +116,7 @@
   <!-- KONTAKT OS MAIN -->
   <main>
 
-    <!-- KONTAKTINFORMATIONER OG KONTAKTFORMULAR -->
+    <!-- KONTAKTINFORMATIONER OG KONTAKTFORMULAR (Natascha & Simon) -->
 
 
     <!-- KONTAKT INFORMATIONER -->
@@ -214,107 +215,105 @@
   </main>
 
 
-  <!---------------- FOOTER ------------>
-  <footer>
+    <!---------------- FOOTER (SIMON & SIGNE) ------------>
+    <footer>
 
 
-    <div>
-      <div class="footer-content-wrapper">
-        <h3>Adresse</h3>
-        <p>
-          Birkemose Allé 29 <br> <br>
+      <div>
+          <div class="footer-content-wrapper">
+              <h3>Adresse</h3>
+              <p>
+                  Birkemose Allé 29 <br> <br>
 
-          6000 Kolding <br> <br>
+                  6000 Kolding <br> <br>
 
-          CVR: 39592169
+                  CVR: 39592169
 
-        </p>
+              </p>
+          </div>
       </div>
-    </div>
 
 
-    <div>
-      <div class="footer-content-wrapper">
-        <h3>Åbningstider</h3>
-        <table>
+      <div>
+          <div class="footer-content-wrapper">
+              <h3>Åbningstider</h3>
+              <table>
 
-          <tr>
-            <td>Mandag-Onsdag</td>
-            <td>Efter aftale</td>
-          </tr>
+                  <tr>
+                      <td>Mandag-Onsdag</td>
+                      <td>Efter aftale</td>
+                  </tr>
 
-          <tr>
-            <td>Torsdag</td>
-            <td>17:00 - 19:00</td>
-          </tr>
+                  <tr>
+                      <td>Torsdag</td>
+                      <td>17:00 - 19:00</td>
+                  </tr>
 
-          <tr>
-            <td>Fredag</td>
-            <td>10:00 - 13:00</td>
-          </tr>
+                  <tr>
+                      <td>Fredag</td>
+                      <td>10:00 - 13:00</td>
+                  </tr>
 
-          <tr>
-            <td>Lørdag</td>
-            <td>10:00 - 13:00</td>
-          </tr>
+                  <tr>
+                      <td>Lørdag</td>
+                      <td>10:00 - 13:00</td>
+                  </tr>
 
-          <tr>
-            <td>Søndag</td>
-            <td>Efter aftale</td>
-          </tr>
+                  <tr>
+                      <td>Søndag</td>
+                      <td>Efter aftale</td>
+                  </tr>
 
-        </table>
+              </table>
+          </div>
       </div>
-    </div>
 
-    <div>
-      <div class="footer-content-wrapper">
-          <h3>Kontakt</h3>
-          <p>
-              Mail: <br>
-              mail@trekantensbartender.dk <br> <br>
-              Telefon: <br>
-              +45 28 59 34 66
 
-          </p>
 
-              <div class="footer-socialmedia">
-                  <a href="https://www.facebook.com/trekantensbartender/">
-                      <img src="img/facebook.svg" alt="Facebook ikon">
-                  </a>
+      <div>
+          <div class="footer-content-wrapper">
+              <h3>Kontakt</h3>
+              <p>
+                  Mail: <br>
+                  mail@trekantensbartender.dk <br> <br>
+                  Telefon: <br>
+                  +45 28 59 34 66
 
-                  <a href="https://www.instagram.com/trekantenstjenerudlejning/">
-                      <img src="img/instagram.svg" alt="Instagram ikon">
-                  </a>
-              </div>
-       
+              </p>
+
+                  <div class="footer-socialmedia">
+                      <a href="https://www.facebook.com/trekantensbartender/">
+                          <img src="img/facebook.svg" alt="Facebook ikon">
+                      </a>
+
+                      <a href="https://www.instagram.com/trekantenstjenerudlejning/">
+                          <img src="img/instagram.svg" alt="Instagram ikon">
+                      </a>
+                  </div>
+           
+          </div>
       </div>
-  </div>
 
-</footer>
-
+  </footer>
 
 
+<!----------- POPUP CHAT (RIGMOR & SIGNE) ----------->
 
+<button class="open-button" onclick="openForm()"><i class='far fa-comment-dots'></i>CHAT MED OS HER</button>
 
+<div class="chat-popup" id="myForm">
+    <form class="form-container">
+        <div class="billede">
+            <img class="billede" src="img/logo.png" alt="Logo - Trekantens Events">
+        </div>
 
-   <!----------- POPUP CHAT----------->
+        <label class="chatboxtext" for="msg">Vi bestræber os på at svare indenfor 2-3 timer</label>
+        <textarea class="skrivher" placeholder="Skriv din besked her..." name="msg" id="msg" required></textarea>
 
-   <button class="open-button" onclick="openForm()"><i class='far fa-comment-dots'></i>CHAT MED OS HER</button>
-
-   <div class="chat-popup" id="myForm">
-       <form class="form-container">
-           <div class="billede">
-               <img class="billede" src="img/logo.png" alt="Logo - Trekantens Events">
-           </div>
-
-           <label class="chatboxtext" for="msg">Vi bestræber os på at svare indenfor 2-3 timer</label>
-           <textarea class="skrivher" placeholder="Skriv din besked her..." name="msg" id="msg" required></textarea>
-
-           <button onclick="alertFunction()" type="submit" class="btn">SEND BESKED</button>
-           <button type="button" class="btn cancel" onclick="closeForm()">LUK CHAT VINDUE</button>
-       </form>
-   </div>
+        <button onclick="alertFunction()" type="submit" class="btn">SEND BESKED</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">LUK CHAT VINDUE</button>
+    </form>
+</div>
 
   <script src="js/trekantensscript.js"></script>
 

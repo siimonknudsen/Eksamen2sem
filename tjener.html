@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="da">
 
+<!-- (Simon & Natascha) -->
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,7 +32,7 @@
 </head>
 
 <body>
-    <!------------NAVIGATION ------------->
+    <!------------NAVIGATION (Natascha & Rigmor) ------------->
     <header>
         <nav>
 
@@ -109,8 +111,10 @@
         </nav>
     </header>
 
+
+    <!-- MAIN CONTENT -->
     <main>
-        <!----------- HERO BILLEDE + TEKST----------->
+        <!----------- HERO BILLEDE + TEKST (Simon & Signe) ----------->
         <article>
             <div class="hero-image tjener">
                 <div class="hero-text-boks">
@@ -124,7 +128,7 @@
         </article>
 
 
-        <!----------- OM UDLEJNING ----------->
+        <!----------- OM UDLEJNING (Natascha & Rigmor)----------->
         <article id="tjener-information-link">
             <div class="back">
 
@@ -155,7 +159,7 @@
             </div>
         </article>
 
-        <!----------- PRIS PR GÆST PR TIME ----------->
+         <!----------- PRIS PR GÆST PR TIME (Simon & Rigmor) ----------->
         <article id="tjener-priser-link" class="prisoversigt">
             <img src="img/wave.svg" alt="Illustration af bølgeform">
 
@@ -204,7 +208,7 @@
         </article>
 
 
-        <!----------- OM UDLEJNING ----------->
+        <!----------- OM UDLEJNING (Natascha & Rigmor) ----------->
         <article>
             <div class="back">
 
@@ -241,6 +245,9 @@
 
                 </div>
 
+                
+                <!----------- PAKKETILBUD (Natascha & Signe )----------->
+
                 <div class="storecontainer">
                     <div class="lillecontainer">
                         <img src="img/tjener2.webp"
@@ -273,7 +280,10 @@
 
 
     </main>
-    <!---------------- FOOTER ------------>
+
+
+
+    <!---------------- FOOTER (SIMON & SIGNE) ------------>
     <footer>
 
 
@@ -327,6 +337,7 @@
         </div>
 
 
+
         <div>
             <div class="footer-content-wrapper">
                 <h3>Kontakt</h3>
@@ -354,24 +365,23 @@
     </footer>
 
 
-  <!----------- POPUP CHAT----------->
+    <!----------- POPUP CHAT (RIGMOR & SIGNE) ----------->
 
-  <button class="open-button" onclick="openForm()"><i class='far fa-comment-dots'></i>CHAT MED OS HER</button>
+    <button class="open-button" onclick="openForm()"><i class='far fa-comment-dots'></i>CHAT MED OS HER</button>
 
-  <div class="chat-popup" id="myForm">
-      <form class="form-container">
-          <div class="billede">
-              <img class="billede" src="img/logo.png" alt="Logo - Trekantens Events">
-          </div>
+    <div class="chat-popup" id="myForm">
+        <form class="form-container">
+            <div class="billede">
+                <img class="billede" src="img/logo.png" alt="Logo - Trekantens Events">
+            </div>
 
-          <label class="chatboxtext" for="msg">Vi bestræber os på at svare indenfor 2-3 timer</label>
-          <textarea class="skrivher" placeholder="Skriv din besked her..." name="msg" id="msg" required></textarea>
+            <label class="chatboxtext" for="msg">Vi bestræber os på at svare indenfor 2-3 timer</label>
+            <textarea class="skrivher" placeholder="Skriv din besked her..." name="msg" id="msg" required></textarea>
 
-          <button onclick="alertFunction()" type="submit" class="btn">SEND BESKED</button>
-          <button type="button" class="btn cancel" onclick="closeForm()">LUK CHAT VINDUE</button>
-      </form>
-  </div>
-
+            <button onclick="alertFunction()" type="submit" class="btn">SEND BESKED</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">LUK CHAT VINDUE</button>
+        </form>
+    </div>
 
     <script src="js/trekantensscript.js"></script>
 
